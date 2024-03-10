@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "fuckv2",
   version: "3.1.1",
-  permssion: 2,
+  permssion: 0,
   prefix: true,
   credits: "Nayan",
   description: "Get fuck",
@@ -46,7 +46,7 @@ async function makeImage({ one, two }) {
 
   let circleOne = await jimp.read(await circle(avatarOne));
   let circleTwo = await jimp.read(await circle(avatarTwo));
-  batgiam_img.composite(circleOne.resize(100, 100), 150, 170).composite(circleTwo.resize(100, 100), 100, 20);
+  batgiam_img.composite(circleOne.resize(50, 50), 150, 170).composite(circleTwo.resize(100, 100), 100, 20);
 
   let raw = await batgiam_img.getBufferAsync("image/png");
 
