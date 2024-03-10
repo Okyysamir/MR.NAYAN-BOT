@@ -23,7 +23,7 @@ module.exports.onLoad = async() => {
   const dirMaterial = __dirname + `/cache/canvas/`;
   const path = resolve(__dirname, 'cache/canvas', 'fuckv3.png');
   if (!existsSync(dirMaterial + "canvas")) mkdirSync(dirMaterial, { recursive: true });
-  if (!existsSync(path)) await downloadFile("https://i.postimg.cc/2jtjnJyr/Instagram-426365956-7491738097556186-2882971814186253604-n-jpg-1.jpg", path);
+  if (!existsSync(path)) await downloadFile("https://i.postimg.cc/k4F82CqJ/dogi.gif", path);
 }
 
 async function makeImage({ one, two }) {
