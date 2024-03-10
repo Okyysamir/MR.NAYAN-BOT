@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "fuckv2",
   version: "3.1.1",
-  permssion: 0,
+  permssion: 2,
   prefix: true,
   credits: "Nayan",
   description: "Get fuck",
@@ -23,7 +23,7 @@ module.exports.onLoad = async() => {
   const dirMaterial = __dirname + `/cache/canvas/`;
   const path = resolve(__dirname, 'cache/canvas', 'fuckv3.png');
   if (!existsSync(dirMaterial + "canvas")) mkdirSync(dirMaterial, { recursive: true });
-  if (!existsSync(path)) await downloadFile("https://i.ibb.co/TW9Kbwr/images-2022-08-14-T183542-356.jpg", path);
+  if (!existsSync(path)) await downloadFile("https://imgbb.com/https://i.ibb.co/x3P5KxD/dogi.gif", path);
 }
 
 async function makeImage({ one, two }) {
