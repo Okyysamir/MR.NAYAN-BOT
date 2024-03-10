@@ -23,7 +23,7 @@ module.exports.onLoad = async() => {
   const dirMaterial = __dirname + `/cache/canvas/`;
   const path = resolve(__dirname, 'cache/canvas', 'fuckv3.png');
   if (!existsSync(dirMaterial + "canvas")) mkdirSync(dirMaterial, { recursive: true });
-  if (!existsSync(path)) await downloadFile("https://i.postimg.cc/k4F82CqJ/dogi.gif", path);
+  if (!existsSync(path)) await downloadFile("https://i.postimg.cc/CK1Z78Gq/406670627-1816414952123594-4025935645112628612-n.jpg", path);
 }
 
 async function makeImage({ one, two }) {
@@ -46,7 +46,7 @@ async function makeImage({ one, two }) {
 
   let circleOne = await jimp.read(await circle(avatarOne));
   let circleTwo = await jimp.read(await circle(avatarTwo));
-  batgiam_img.composite(circleOne.resize(50, 50), 150, 170).composite(circleTwo.resize(100, 100), 100, 20);
+  batgiam_img.composite(circleOne.resize(70, 70), 150, 170).composite(circleTwo.resize(100, 100), 100, 180);
 
   let raw = await batgiam_img.getBufferAsync("image/png");
 
